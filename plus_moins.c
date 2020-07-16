@@ -6,6 +6,7 @@
 
 int main()
 {
+    // initialisation des variables
     int nombre_a_deviner = 0, nombreEntre = 0;
     int compteurDeCoups = 0;
     int continuerPartie = 1;
