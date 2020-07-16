@@ -1,6 +1,5 @@
 # plus_moins_kasandji_mboukeu
 
+compilation : gcc plus_moins.c -o plus_moins
 
-
-j'ai pas pu faire avec les fonction sa ne marchais pas 
-et il avait plus le temps 
+execution : ./plus_moins

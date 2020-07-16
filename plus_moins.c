@@ -63,7 +63,7 @@ int main()
 			        nombre_a_deviner = (rand() % (max - min + 1)) + min;
 
                                 //Compteur de coups
-                                compteurDeCoups++ ;
+                                compteurDeCoups++;
                                 // On demande le nombre
                                 printf("Quel est le nombre ? ");
                                 scanf("%d", &nombreEntre);
@@ -79,13 +79,14 @@ int main()
 
                             } while (nombreEntre != nombre_a_deviner);break;
                 case 2 /*Mode 2 joueur*/:
+
                     do
                     {
                         //Compteur de coups
 
 	
 
-                        for(int compteurDeCoups=0; compteurDeCoups < 2; compteurDeCoups++)
+                        //for(int compteurDeCoups=0; compteurDeCoups < 2; compteurDeCoups++)
 		
                         // On demande le nombre
                         if(finDuJeu!=0)
@@ -93,8 +94,9 @@ int main()
 
 			    nombre_a_deviner = (rand() % (max - min + 1)) + min;
 
-                            
 
+                            
+				compteurDeCoups++;
 
 			     printf("Joueur 2 : Quel est le nombre ? ");
 			     scanf("%d", &nombreEntre);
@@ -116,7 +118,7 @@ int main()
                             }
                         }
 
-                    } while (nombreEntre != nombre_a_deviner);break;
+                    } while (compteurDeCoups<6);printf ("desoler vous epuiser vos essaie %d coups !!!\n\n",compteurDeCoups);break;
                 default : printf("Mode du joueur errone, veuillez choisir 1 ou 2!\n");
             }
         }
