@@ -105,7 +105,7 @@ int main()
 
 
 
-                            // On compare le nombre entré avec le nombre a diviner
+                            // On compare le nombre entré avec le nombre a diviner 
 
                             if (nombre_a_deviner > nombreEntre)
                                 printf("C'est plus !\n\n");
@@ -114,6 +114,8 @@ int main()
                             else
                             {
                                 printf ("Bravo, vous avez trouve le nombre mystere en %d coups !!!\n\n",compteurDeCoups);
+                                // marquage d'un point
+                                printf ("vous marque un 1 points");
                                 finDuJeu = 0;
                             }
                         }
